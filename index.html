@@ -161,11 +161,12 @@ Happy Birthday 🌟🌟🌟
 function login() {
     var user = document.getElementById("username").value;
     var pass = document.getElementById("password").value;
-    const baithSong = new Audio('')
+    const baithSong = new Audio('Albumaty.Com_Group_Happy_Birth_Day.mp3');
     if (user === "Mero" && pass === "1/1") {
         document.getElementById("loginBox").classList.add("hidden");
         document.getElementById("welcomeBox").classList.remove("hidden");
         startHearts();
+        baithSong.play();
     } else {
         alert("اليوزر نيم أو الباسورد غلط ❌");
     }
@@ -187,4 +188,5 @@ function startHearts() {
 
 </body>
 </html>
+
 
